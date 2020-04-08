@@ -1,0 +1,13 @@
+# Do not change PAYLOAD and HEADERS unless you want to change the functions using them
+PAYLOAD = {}
+HEADERS = {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json',
+  'Authorization': 'SSWS <YOUR API TOKEN GOES HERE>'
+}
+OKTA_ORG = "https://YOUR-OKTA-TENANT.oktapreview.com"
+OKTA_API_ENDPOINT = "/api/v1/users"
+# Okta preview is going to limit it to 200 anyway
+USERS_LIMIT="&limit=1000"
+FILTER_API = OKTA_ORG + OKTA_API_ENDPOINT + "?filter=status eq \"STAGED\""+USERS_LIMIT
+DEACTIVATE_API = OKTA_ORG + OKTA_API_ENDPOINT + OKTA_API_ENDPOINT
