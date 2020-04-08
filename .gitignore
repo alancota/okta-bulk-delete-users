@@ -1,5 +1,5 @@
 # Constants with particular Okta Tenant info
-contant.py
+constant.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
